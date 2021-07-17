@@ -1,0 +1,27 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "First Project \"Brain Games\" for Hexlet program \"Frontend developer\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inadadurov/frontend-project-lvl1.git"
+  },
+  "keywords": [
+    "Hexlet",
+    "Brain",
+    "Games",
+    "Hexlet",
+    "Training",
+    "Project"
+  ],
+  "author": "Ilia Adadurov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inadadurov/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/inadadurov/frontend-project-lvl1#readme"
+}
