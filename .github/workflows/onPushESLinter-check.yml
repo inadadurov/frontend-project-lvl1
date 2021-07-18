@@ -6,8 +6,12 @@ on:
       - main
 
 jobs:
-  run-ESLinter-check-for-project:
+  Build-and-run-ESLinter:
     runs-on: ubuntu-latest
     steps:
-      - uses: inadadurov/frontend-project-lvl1/.github/workflows/myActions.yml
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: make install
       - run: make lint
