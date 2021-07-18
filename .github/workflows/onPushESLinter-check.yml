@@ -9,5 +9,5 @@ jobs:
   run-ESLinter-check-for-project:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./myActions.yml
+      - uses: /home/adadurovin/frontend-project-lvl1/.github/myActions.yml
       - run: make lint
