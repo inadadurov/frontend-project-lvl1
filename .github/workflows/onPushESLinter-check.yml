@@ -1,0 +1,10 @@
+name: Project Linter Check
+
+on:
+  - push
+
+jobs:
+  run-ESLinter-check-for-project:
+    runs-on: ubuntu-latest
+    steps:
+      - run: make lint
