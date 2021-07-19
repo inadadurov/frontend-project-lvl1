@@ -1,8 +1,7 @@
-// games are described in this file
+// game "answer if number is even or not" is described in this file
 
 import readlineSync from 'readline-sync';
 
-// first game - answer if number is even or not
 const gameEvenNumbers = (NameOfPlayer) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
