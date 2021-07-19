@@ -2,10 +2,11 @@
 
 import readlineSync from 'readline-sync';
 
+// user welcome dialog
 const welcomeDialog = () => {
-  const playerName = readlineSync.question('May I have your name? ');
-  // console.log('Hello, ', playerName, '!');
-  return (''.concat('Hello, ', playerName, '!'));
+  const name = readlineSync.question('May I have your name? ');
+  console.log(''.concat('Hello, ', name, '!'));
+  return name;
 };
 
 export default welcomeDialog;

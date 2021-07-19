@@ -4,6 +4,11 @@
 
 // eslint-disable-next-line import/named
 import welcomeDialog from '../src/cli.js';
+import gameEvenNumbers from '../src/games.js';
 
 console.log('Welcome to the Brain Games!');
-console.log(welcomeDialog());
+
+const playerName = welcomeDialog();
+
+// game #1 Enev Numbers
+gameEvenNumbers(playerName);
