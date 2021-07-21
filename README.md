@@ -18,3 +18,6 @@ Game "Greatest Common Divisor" played <br />
 
 Game "Progression" played <br />
 <a href="https://asciinema.org/a/10IMpgCaHMmtOrd7DcigodOD5" target="_blank"><img src="https://asciinema.org/a/10IMpgCaHMmtOrd7DcigodOD5.svg" width="450" height="225"/></a>
+
+Game "Even Numbers" played <br />
+<a href="https://asciinema.org/a/fqSQypaEmBt6uR8mQCMYI6vxX" target="_blank"><img src="https://asciinema.org/a/fqSQypaEmBt6uR8mQCMYI6vxX.svg" width="450" height="225"/></a>

@@ -1,5 +1,4 @@
 // Game ariphmetic progression
-// game "answer if number is even or not" is described in this file
 
 import readlineSync from 'readline-sync';
 import userDialog from '../src/cli.js';
