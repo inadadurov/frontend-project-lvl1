@@ -8,7 +8,7 @@ ESLinter checks status
 ![example workflow](https://github.com/inadadurov/frontend-project-lvl1/actions/workflows/onPushESLinter-check.yml/badge.svg)
 
 Brain Games package installation and game "Even Numbers" played
-<a href="https://asciinema.org/a/881vMaAUzL94KLCfJMZyGar99" target="_blank"><img src="https://asciinema.org/a/881vMaAUzL94KLCfJMZyGar99.svg" /></a>
+<a href="https://asciinema.org/a/881vMaAUzL94KLCfJMZyGar99" target="_blank"><img src="https://asciinema.org/a/881vMaAUzL94KLCfJMZyGar99.svg" width="200" height="100"/> </a>
 
 Game "Calculator" played
 <script id="asciicast-vj5mQNKGYyTvDmmK2bOwxu4rK" src="https://asciinema.org/a/vj5mQNKGYyTvDmmK2bOwxu4rK.js" async></script>
