@@ -17,4 +17,4 @@ Game "Greatest Common Divisor" played <br />
 <a href="https://asciinema.org/a/R70U82C8Fbzgp9XfvtBxeLXXx" target="_blank"><img src="https://asciinema.org/a/R70U82C8Fbzgp9XfvtBxeLXXx.svg" width="450" height="225"/></a>
 
 Game "Progression" played <br />
-<a href="https://asciinema.org/a/10IMpgCaHMmtOrd7DcigodOD5" target="_blank"><img src="https://asciinema.org/a/10IMpgCaHMmtOrd7DcigodOD5.svg" /></a>
+<a href="https://asciinema.org/a/10IMpgCaHMmtOrd7DcigodOD5" target="_blank"><img src="https://asciinema.org/a/10IMpgCaHMmtOrd7DcigodOD5.svg" width="450" height="225"/></a>
