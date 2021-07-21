@@ -1,8 +1,9 @@
 // game "Calculator" is described in this file
 
 import readlineSync from 'readline-sync';
+import userDialog from '../src/cli.js';
 
-const gameCalculator = (NameOfPlayer) => {
+const gameCalculator = (name) => {
   console.log('What is the result of the expression?');
 
   for (let i = 1; i <= 3; i += 1) {
@@ -37,8 +38,11 @@ const gameCalculator = (NameOfPlayer) => {
     }
   }
 
-  console.log(''.concat('Congratulations, ', NameOfPlayer, '!'));
+  console.log(''.concat('Congratulations, ', name, '!'));
   return true;
 };
+
+const nameOfPlayer = userDialog();
+gameCalculator(nameOfPlayer);
 
 export default gameCalculator;

@@ -25,7 +25,10 @@
   "type": "module",
   "homepage": "https://github.com/inadadurov/frontend-project-lvl1#readme",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc.js": "bin/brain-calc.js",
+    "brain-gcd.js": "bin/brain-gcd.js"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"

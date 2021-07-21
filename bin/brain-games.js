@@ -3,16 +3,14 @@
 // позволит выполнить код, который в нём расположен
 
 // eslint-disable-next-line import/named
-import welcomeDialog from '../src/cli.js';
-import gameEvenNumbers from '../src/game_EvenNumbers.js';
-import gameCalculator from '../src/game_Calculator.js';
+import userDialog from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
+userDialog();
 
-const playerName = welcomeDialog();
-
-// game #1 Enev Numbers
-gameEvenNumbers(playerName);
-
-// game #2 Calculator
-gameCalculator(playerName);
+// import gameEvenNumbers from './brain-even.js';
+// import gameCalculator from './brain-calc.js';
+// import gameGreatestCommonDivisor from './brain-gcd.js';
+// const playerName = welcomeDialog();
+// gameEvenNumbers(playerName);
+// gameCalculator(playerName);
+// gameGreatestCommonDivisor(playerName);

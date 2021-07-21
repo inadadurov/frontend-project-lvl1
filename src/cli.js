@@ -3,10 +3,11 @@
 import readlineSync from 'readline-sync';
 
 // user welcome dialog
-const welcomeDialog = () => {
+const userDialog = () => {
+  console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(''.concat('Hello, ', name, '!'));
   return name;
 };
 
-export default welcomeDialog;
+export default userDialog;

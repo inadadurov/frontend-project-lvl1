@@ -1,8 +1,9 @@
 // game "answer if number is even or not" is described in this file
 
 import readlineSync from 'readline-sync';
+import userDialog from '../src/cli.js';
 
-const gameEvenNumbers = (NameOfPlayer) => {
+const gameEvenNumbers = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 1; i <= 3; i += 1) {
@@ -27,8 +28,11 @@ const gameEvenNumbers = (NameOfPlayer) => {
     }
   }
 
-  console.log(''.concat('Congratulations, ', NameOfPlayer, '!'));
+  console.log(''.concat('Congratulations, ', name, '!'));
   return true;
 };
+
+const nameOfPlayer = userDialog();
+gameEvenNumbers(nameOfPlayer);
 
 export default gameEvenNumbers;
