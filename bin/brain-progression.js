@@ -1,3 +1,7 @@
+#!/usr/bin/env node
+// При запуске исполняемого файла такая запись (строка выше с шебангом)
+// позволит выполнить код, который в нём расположен
+
 // Game ariphmetic progression
 
 import readlineSync from 'readline-sync';
