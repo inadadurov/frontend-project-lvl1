@@ -28,6 +28,7 @@ const gameEvenNumbers = (name) => {
       console.log('Correct!');
     } else {
       console.log(''.concat('\'', answer, '\' is wrong answer ;(. Correct answer was \'', rightAnswer, '\''));
+      console.log('Let\'s try again, ', name);
       return false;
     }
   }
