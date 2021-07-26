@@ -13,7 +13,7 @@ const gameEvenNumbers = (name) => {
   for (let i = 1; i <= 3; i += 1) {
     const number = Math.floor(Math.random() * 100);
 
-    console.log('Question: ', number);
+    console.log(''.concat('Question: ', number));
     const answer = readlineSync.question('Your answer: ');
 
     let rightAnswer = '';
