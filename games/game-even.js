@@ -1,28 +1,19 @@
-import { getRandInt, answerProcessor, msgWinner } from '../src/index.js';
+import { getRandInt } from '../src/index.js';
 
-const gameEvenNumbers = (name) => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const gameEvenNumbers = () => {
+  const explanation = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  for (let i = 1; i <= 3; i += 1) {
-    const number = getRandInt(0, 100);
+  const expression = getRandInt(0, 100);
 
-    let rightAnswer = '';
+  let rightAnswer = '';
 
-    if (number % 2 === 0) {
-      rightAnswer = 'yes';
-    } else {
-      rightAnswer = 'no';
-    }
-
-    const result = answerProcessor(number, rightAnswer, false);
-
-    if (result === 'loose') {
-      return false;
-    }
+  if (expression % 2 === 0) {
+    rightAnswer = 'yes';
+  } else {
+    rightAnswer = 'no';
   }
 
-  msgWinner(name);
-  return true;
+  return [explanation, expression, rightAnswer, false];
 };
 
 export default gameEvenNumbers;

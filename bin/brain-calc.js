@@ -2,12 +2,7 @@
 // При запуске исполняемого файла такая запись (строка выше с шебангом)
 // позволит выполнить код, который в нём расположен
 
-// game "Calculator" is described in this file
-
-import userDialog from '../src/cli.js';
 import gameCalculator from '../games/game-calc.js';
+import { engineBrainGames } from '../src/index.js';
 
-const nameOfPlayer = userDialog();
-gameCalculator(nameOfPlayer);
-
-export default gameCalculator;
+engineBrainGames(gameCalculator, 3);
