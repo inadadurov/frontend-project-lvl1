@@ -25,7 +25,8 @@ const msgWinner = (playerName) => console.log(''.concat('Congratulations, ', pla
 const msgLoser = (playerAnswer, rightAnswer, playerName) => {
   console.log(''.concat(
     '\'', playerAnswer, '\' is wrong answer ;(.Correct answer was \'',
-    rightAnswer, '\'\nLet\'s try again, ', playerName, '!'));
+    rightAnswer, '\'\nLet\'s try again, ', playerName, '!',
+  ));
 };
 
 function engineBrainGames(game, cyclesNumber = 3) {
