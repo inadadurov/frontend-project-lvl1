@@ -22,7 +22,11 @@ const answerProcessor = (questionExpression, correctAnswer, numericAnswerExpecte
 
 const msgWinner = (playerName) => console.log(''.concat('Congratulations, ', playerName, '!'));
 
-const msgLoser = (playerAnswer, rightAnswer) => console.log(''.concat('\'', playerAnswer, '\' is wrong answer ;(. Correct answer was \'', rightAnswer, '\''));
+const msgLoser = (playerAnswer, rightAnswer, playerName) => {
+  console.log(''.concat(
+    '\'', playerAnswer, '\' is wrong answer ;(.Correct answer was \'',
+    rightAnswer, '\'\nLet\'s try again, ', playerName, '!'));
+};
 
 function engineBrainGames(game, cyclesNumber = 3) {
   // engine to play all games
@@ -48,7 +52,7 @@ function engineBrainGames(game, cyclesNumber = 3) {
     }
 
     if (Number.isNaN(playerAnswer) || playerAnswer !== rightAnswer) {
-      msgLoser(answer, rightAnswer);
+      msgLoser(answer, rightAnswer, playerName);
       return false;
     }
 
