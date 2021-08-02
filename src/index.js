@@ -1,18 +1,8 @@
 import readlineSync from 'readline-sync';
 import userDialog from './cli.js';
+import { getRandInt } from './utils.js';
 
-const getRandInt = (min, max) => Math.floor(min + Math.random() * max);
-
-const msgWinner = (playerName) => console.log(''.concat('Congratulations, ', playerName, '!'));
-
-const msgLoser = (playerAnswer, rightAnswer, playerName) => {
-  console.log(''.concat(
-    '\'', playerAnswer, '\' is wrong answer ;(.Correct answer was \'',
-    rightAnswer, '\'\nLet\'s try again, ', playerName, '!',
-  ));
-};
-
-function engineBrainGames(game, cyclesNumber = 3) {
+const engineBrainGames = (game, cyclesNumber = 3) => {
   // engine to play all games
 
   // welcome player and store  his/her name
@@ -22,32 +12,28 @@ function engineBrainGames(game, cyclesNumber = 3) {
     const gameData = game(); // get all data from the game
 
     const expression = gameData[1]; // question expression to be adressed to player
-    const rightAnswer = gameData[2]; // right answer for game round
-    const expectNumber = gameData[3]; // boolean to define if to expect number in player's answer
+    const rightAnswer = String(gameData[2]); // right answer for game round and convert to string
 
     if (i === 1) console.log(gameData[0]); // write game explanation at start only
 
-    console.log(''.concat('Question: ', expression)); // show question
-    let playerAnswer = readlineSync.question('Your answer: '); // get answer
-    const answer = playerAnswer;
+    console.log(`Question: ${expression}`); // show question
+    const playerAnswer = String(readlineSync.question('Your answer: ')); // get answer and convert to string
 
-    if (expectNumber) {
-      playerAnswer = Number(playerAnswer);
-    }
-
-    if (Number.isNaN(playerAnswer) || playerAnswer !== rightAnswer) {
-      msgLoser(answer, rightAnswer, playerName);
+    if (playerAnswer !== rightAnswer) {
+      console.log(
+        `'${playerAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again, ${playerName}!`,
+      );
       return false;
     }
 
     console.log('Correct!');
-
-    if (i === cyclesNumber) msgWinner(playerName);
   }
 
+  console.log(`Congratulations, ${playerName}!`);
+
   return true;
-}
+};
 
 export {
-  getRandInt, msgWinner, engineBrainGames,
+  getRandInt, engineBrainGames,
 };

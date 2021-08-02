@@ -1,8 +1,6 @@
 #!/usr/bin/env node
-// При запуске исполняемого файла такая запись (строка выше с шебангом)
-// позволит выполнить код, который в нём расположен
 
-import gameCalculator from '../games/game-calc.js';
+import gameCalculator from '../src/games/game-calc.js';
 import { engineBrainGames } from '../src/index.js';
 
-engineBrainGames(gameCalculator, 3);
+engineBrainGames(gameCalculator);
