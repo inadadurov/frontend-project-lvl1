@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import gamePrimeNumbers from '../src/games/game-prime.js';
-import { engineBrainGames } from '../src/index.js';
+import launchPrime from '../src/games/game-prime';
 
-engineBrainGames(gamePrimeNumbers);
+launchPrime();

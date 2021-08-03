@@ -1,6 +1,17 @@
-import { ariphmeticProgression, getRandInt } from '../utils.js';
+import getRandInt from '../utils.js';
+import engineBrainGames from '../index.js';
 
-const description = 'What number is missing in the progression?';
+const gameDescription = 'What number is missing in the progression?';
+
+const ariphmeticProgression = (firstElement, difference, progressionLength) => {
+  const progression = [];
+
+  for (let j = 0; j < progressionLength; j += 1) {
+    progression.push(firstElement + j * difference);
+  }
+
+  return progression;
+};
 
 const gameArProgression = () => {
   const firstElem = getRandInt(0, 100);
@@ -10,12 +21,14 @@ const gameArProgression = () => {
   const progression = ariphmeticProgression(firstElem, diff, elemNumber);
 
   const hiddenElemPos = getRandInt(0, progression.length);
-  const rightAnswer = progression[hiddenElemPos];
+  const rightAnswer = String(progression[hiddenElemPos]);
   progression.splice(hiddenElemPos, 1, '..');
 
   const expression = progression.join(' ');
 
-  return [description, expression, rightAnswer];
+  return [expression, rightAnswer];
 };
 
-export default gameArProgression;
+const launchProgression = () => engineBrainGames(gameArProgression, gameDescription);
+
+export default launchProgression;

@@ -1,6 +1,20 @@
-import { getRandInt, calculate } from '../utils.js';
+import getRandInt from '../utils.js';
+import engineBrainGames from '../index.js';
 
-const description = 'What is the result of the expression?';
+const gameDescription = 'What is the result of the expression?';
+
+const calculate = (operand1, operand2, operator) => {
+  switch (operator) {
+    case '+':
+      return operand1 + operand2;
+    case '-':
+      return operand1 - operand2;
+    case '*':
+      return operand1 * operand2;
+    default:
+      throw new Error(`Unknown operation: '${operator}'!`);
+  }
+};
 
 const gameCalculator = () => {
   const number1 = getRandInt(0, 20);
@@ -9,14 +23,13 @@ const gameCalculator = () => {
   const operators = ['+', '-', '*'];
   const pickedOperator = operators[getRandInt(0, operators.length)];
 
-  // determine calculation and right answer
-  let rightAnswer = 0;
-
-  rightAnswer = calculate(number1, number2, pickedOperator);
+  const rightAnswer = String(calculate(number1, number2, pickedOperator));
 
   const expression = `${number1} ${pickedOperator} ${number2}`;
 
-  return [description, expression, rightAnswer];
+  return [expression, rightAnswer];
 };
 
-export default gameCalculator;
+const launchCalc = () => engineBrainGames(gameCalculator, gameDescription);
+
+export default launchCalc;

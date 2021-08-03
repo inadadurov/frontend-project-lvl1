@@ -1,6 +1,14 @@
-import { getRandInt, isPrime } from '../utils.js';
+import getRandInt from '../utils.js';
+import engineBrainGames from '../index.js';
 
-const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+const isPrime = (number) => {
+  for (let i = 2; i <= number ** (1 / 2); i += 1) {
+    if (number % i === 0) return false;
+  }
+  return true;
+};
 
 const gamePrimeNumbers = () => {
   const number = getRandInt(1, 500);
@@ -8,7 +16,9 @@ const gamePrimeNumbers = () => {
 
   const rightAnswer = isPrime(number) ? 'yes' : 'no';
 
-  return [description, expression, rightAnswer];
+  return [expression, rightAnswer];
 };
 
-export default gamePrimeNumbers;
+const launchPrime = () => engineBrainGames(gamePrimeNumbers, gameDescription);
+
+export default launchPrime;

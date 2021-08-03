@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import gameGreatestCommonDivisor from '../src/games/game-gcd.js';
-import { engineBrainGames } from '../src/index.js';
+import launchGcd from '../src/games/game-gcd';
 
-engineBrainGames(gameGreatestCommonDivisor);
+launchGcd();

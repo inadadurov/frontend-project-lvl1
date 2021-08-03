@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import gameEvenNumbers from '../src/games/game-even.js';
-import { engineBrainGames } from '../src/index.js';
+import launchEven from '../src/games/game-even.js';
 
-engineBrainGames(gameEvenNumbers);
+launchEven();

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import gameCalculator from '../src/games/game-calc.js';
-import { engineBrainGames } from '../src/index.js';
+import launchCalc from '../src/games/game-calc.js';
 
-engineBrainGames(gameCalculator);
+launchCalc();
