@@ -22,7 +22,7 @@ const gameArProgression = () => {
 
   const hiddenElemPos = getRandInt(0, progression.length - 1);
   const rightAnswer = String(progression[hiddenElemPos]);
-  progression.splice(hiddenElemPos, 1, '..');
+  progression[hiddenElemPos] = '..';
 
   const expression = progression.join(' ');
 

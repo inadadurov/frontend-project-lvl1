@@ -4,10 +4,8 @@
 Maintainability
 <a href="https://codeclimate.com/github/inadadurov/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/4b5e0f556beca39af705/maintainability" /></a>
 
-ESLinter checks status
+ESLinter checks status <br />
 <a href="https://github.com/inadadurov/frontend-project-lvl1/actions/workflows/onPushESLinter-check.yml"><img src="https://github.com/inadadurov/frontend-project-lvl1/actions/workflows/onPushESLinter-check.yml/badge.svg" /></a>
-
-![example workflow](https://github.com/inadadurov/frontend-project-lvl1/actions/workflows/onPushESLinter-check.yml/badge.svg)
 
 Brain Games package installation and game "Even Numbers" played <br />
 <a href="https://asciinema.org/a/7YkMof45lvAENv95zB0mj1A6V" target="_blank"><img src="https://asciinema.org/a/7YkMof45lvAENv95zB0mj1A6V.svg" width="450" height="225"/></a>

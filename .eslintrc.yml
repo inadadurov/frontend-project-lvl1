@@ -2,7 +2,6 @@
 env: 
   # окружение в котором предполагается работа приложения
   node: true
-  browser: true
 
 extends:
   - 'airbnb-base'
