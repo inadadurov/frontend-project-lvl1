@@ -3,7 +3,7 @@ import engineBrainGames from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const ariphmeticProgression = (firstElement, difference, progressionLength) => {
+const getProgression = (firstElement, difference, progressionLength) => {
   const progression = [];
 
   for (let j = 0; j < progressionLength; j += 1) {
@@ -18,9 +18,9 @@ const gameArProgression = () => {
   const diff = getRandInt(1, 30);
   const elemNumber = getRandInt(5, 11);
 
-  const progression = ariphmeticProgression(firstElem, diff, elemNumber);
+  const progression = getProgression(firstElem, diff, elemNumber);
 
-  const hiddenElemPos = getRandInt(0, progression.length);
+  const hiddenElemPos = getRandInt(0, progression.length - 1);
   const rightAnswer = String(progression[hiddenElemPos]);
   progression.splice(hiddenElemPos, 1, '..');
 

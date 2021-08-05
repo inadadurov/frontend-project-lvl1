@@ -21,7 +21,7 @@ const gameCalculator = () => {
   const number2 = getRandInt(0, 20);
 
   const operators = ['+', '-', '*'];
-  const pickedOperator = operators[getRandInt(0, operators.length)];
+  const pickedOperator = operators[getRandInt(0, operators.length - 1)];
 
   const rightAnswer = String(calculate(number1, number2, pickedOperator));
 
