@@ -1,5 +1,5 @@
 import getRandInt from '../utils.js';
-import engineBrainGames from '../index.js';
+import runEngineBrainGames from '../index.js';
 
 const gameDescription = 'What is the result of the expression?';
 
@@ -30,6 +30,6 @@ const gameCalculator = () => {
   return [expression, rightAnswer];
 };
 
-const launchCalc = () => engineBrainGames(gameCalculator, gameDescription);
+const launchCalc = () => runEngineBrainGames(gameCalculator, gameDescription);
 
 export default launchCalc;

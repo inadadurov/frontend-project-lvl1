@@ -1,5 +1,5 @@
 import getRandInt from '../utils.js';
-import engineBrainGames from '../index.js';
+import runEngineBrainGames from '../index.js';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -13,6 +13,6 @@ const gameEvenNumbers = () => {
   return [expression, rightAnswer];
 };
 
-const launchEven = () => engineBrainGames(gameEvenNumbers, gameDescription);
+const launchEven = () => runEngineBrainGames(gameEvenNumbers, gameDescription);
 
 export default launchEven;

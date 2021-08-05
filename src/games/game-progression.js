@@ -1,5 +1,5 @@
 import getRandInt from '../utils.js';
-import engineBrainGames from '../index.js';
+import runEngineBrainGames from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
@@ -29,6 +29,6 @@ const gameArProgression = () => {
   return [expression, rightAnswer];
 };
 
-const launchProgression = () => engineBrainGames(gameArProgression, gameDescription);
+const launchProgression = () => runEngineBrainGames(gameArProgression, gameDescription);
 
 export default launchProgression;
