@@ -2,9 +2,11 @@
 [![Actions Status](https://github.com/inadadurov/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/inadadurov/frontend-project-lvl1/actions)
 
 Maintainability
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+<a href="https://codeclimate.com/github/inadadurov/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/4b5e0f556beca39af705/maintainability" /></a>
 
 ESLinter checks status
+<a href="https://github.com/inadadurov/frontend-project-lvl1/actions/workflows/onPushESLinter-check.yml"><ing src="https://github.com/inadadurov/frontend-project-lvl1/actions/workflows/onPushESLinter-check.yml/badge.svg" /></a>
+
 ![example workflow](https://github.com/inadadurov/frontend-project-lvl1/actions/workflows/onPushESLinter-check.yml/badge.svg)
 
 Brain Games package installation and game "Even Numbers" played <br />
